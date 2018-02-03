@@ -1,13 +1,21 @@
+
+
 .carousel-item img {
   max-height: 300px;
   overflow: hidden;
   margin-top: 40px;
 }
 
-h2, h4 {
+h2, h4, table, label, .color {
   color: wheat;
 }
 .col-md-4 img{
   width: 276px;
   height: 183px;
+}
+tbody {
+  background: black;
+}
+.form-control{
+  background: black;
 }
