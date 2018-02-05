@@ -6,7 +6,7 @@
   margin-top: 40px;
 }
 
-h2, h4, table, label, .color {
+h2, h4, table, label, .color, .container {
   color: wheat;
 }
 .col-md-4 img{
@@ -16,6 +16,15 @@ h2, h4, table, label, .color {
 tbody {
   background: black;
 }
-.form-control{
+.form-control, .card, .card-block {
   background: black;
+}
+.card, a {
+  color: wheat;
+}
+a:hover {
+  color: Darkgoldenrod;
+}
+.btn{
+  color: wheat;
 }

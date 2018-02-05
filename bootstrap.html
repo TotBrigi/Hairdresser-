@@ -2,17 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>JONES Hairdresser</title>
+    <link rel="shortcut icon" href="http://tinyurl.hu/0ESt/">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mycss.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
-
+<!--Navbar-->
   <body style="background-image: url(http://tinyurl.hu/zpyX/)">
 
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:Sienna">
-        <a class="navbar-brand" href="#">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:black">
+        <a class="navbar-brand" href="#" style="color:wheat">
            <img src="http://tinyurl.hu/0ESt/" width="50" height="50" class="d-inline-block align-top" alt="scissor">
       JONES
            <br>
@@ -25,17 +26,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
          <ul class="navbar-nav mr-auto">
            <li class="nav-item active">
-             <a class="nav-link" href="#">Our services <span class="sr-only">(current)</span></a>
+             <a style="color:wheat" class="nav-link" href="#Services">Our services <span class="sr-only">(current)</span></a>
            </li>
            <li class="nav-item ">
-             <a class="nav-link" href="#">Make an appointment <span class="sr-only">(current)</span></a>
+             <a style="color:wheat" class="nav-link" href="#Appointment">Make an appointment <span class="sr-only">(current)</span></a>
            </li>
            <li class="nav-item ">
-             <a class="nav-link" href="#">FAQ <span class="sr-only">(current)</span></a>
+             <a style="color:wheat" class="nav-link" href="#Faq">FAQ <span class="sr-only">(current)</span></a>
            </li>
            <li class="nav-item ">
-            <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
-           </li>
+            <a style="color:wheat" class="nav-link" href="About" data-toggle="modal" data-target="#Firstmodal">About Us <span class="sr-only">(current)</span></a>
+           </li><li>
         </ul>
 
         <form class="form-inline my-2 my-lg-0">
@@ -46,6 +47,7 @@
         </nav>
       </div>
 
+<!--carousel-->
      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
        <div class="carousel-inner">
        <div class="carousel-item active">
@@ -72,7 +74,9 @@
       </div>
     </div>
 
-    <div class="container">
+
+       <!--Services-->
+    <div id="Services" class="container">
        <br>
        <br>
        <h2 class="text-center">Our services</h2>
@@ -102,7 +106,9 @@
       <br>
       <br>
       <br>
-    <div class="container">
+
+      <!--Table-->
+    <div id="Appointment" class="container">
        <h2 class="text-center">Make an appointment</h2>
        <br>
        <br>
@@ -134,6 +140,8 @@
     </div>
     <br>
     <br>
+
+<!--Make an appointment input-->
     <div class="container">
       <form>
         <div class="form-group row">
@@ -157,6 +165,167 @@
           <button type="button" class="btn btn-dark">Send</button>
 
             </div>
+
+<!--accordion-->
+           <div id="Faq" class="container">
+               <h2 class="text-center">FAQ</h2>
+               <div id="accordion" role="tablist" aria-multiselectable="true">
+             <div class="card">
+               <div class="card-header" role="tab" id="headingOne">
+                 <h5 class="mb-0">
+                   <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     Do you have any gift certificates?
+                   </a>
+                 </h5>
+               </div>
+
+               <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                 <div class="card-block">
+                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+               <div class="card-header" role="tab" id="headingTwo">
+                 <h5 class="mb-0">
+                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     Can I bring my pet with?
+                   </a>
+                 </h5>
+               </div>
+               <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                 <div class="card-block">
+                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+               <div class="card-header" role="tab" id="headingThree">
+                 <h5 class="mb-0">
+                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                     Do you have any awards?
+                   </a>
+                 </h5>
+               </div>
+               <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                 <div class="card-block">
+                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                 </div>
+               </div>
+             </div>
+           </div>
+
+<br>
+<br>
+
+             <!--Footer-->
+<footer class="page-footer center-on-small-only unique-color-dark pt-0">
+
+    <div style="background-color: black;color: wheat;">
+        <div class="container">
+
+            <div class="row py-4 d-flex align-items-center">
+
+
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                    <a class="icons-sm fb-ic ml-0"><i class="fa fa-facebook white-text mr-lg-4"> </i></a>
+
+                    <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text mr-lg-4"> </i></a>
+
+                    <a class="icons-sm gplus-ic"><i class="fa fa-google-plus white-text mr-lg-4"> </i></a>
+
+                    <a class="icons-sm li-ic"><i class="fa fa-linkedin white-text mr-lg-4"> </i></a>
+
+                    <a class="icons-sm ins-ic"><i class="fa fa-instagram white-text mr-lg-4"> </i></a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container mt-5 mb-4 text-center text-md-left">
+        <div class="row mt-3">
+
+
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-r">
+                <h6 class="title font-bold"><strong>Jones Hairdresser</strong></h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>I am Jones.I am Jones.I am Jones.I am Jones.I am Jones.I am Jones.I am Jones.I am Jones.I am Jones.I am Jones.I am Jones.I am Jones.I am Jones.I am Jones. </p>
+            </div>
+
+
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-r">
+                <h6 class="title font-bold"><strong>What want you know?</strong></h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <ul>
+                <li><a class="alert-link" href="#Services">Our Services</a></li>
+                <li><a class="alert-link" href="#Appointment">Make an appointment</a></li>
+                <li><a class="alert-link" href="#Faq">FAQ</a></li>
+                <li><a class="alert-link" href="#">About Us</a></li>
+              </ul>
+            </div>
+
+
+
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h6 class="title font-bold"><strong>Contact</strong></h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2018 Copyright: <a href="#"><strong> Joneshairdresser.com</strong></a>
+        </div>
+    </div>
+
+
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="Firstmodal" tabindex="-1" role="dialog" aria-labelledby="FirstmodalLabel" aria-hidden="true" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background:black">
+        <h5 class="modal-title" id="Firstmodal">About Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span style="background:black" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background:black">
+        Hello, I am Jones, your hairdresser.
+        I am Jones, the best.
+        The best for your hair.
+        :D
+        <img src="http://tinyurl.hu/gWw0/" alt="Jones" class="img-responsive" style="max-height:250px">
+      </div>
+      <div class="modal-footer" style="background:black">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   </div>
     </div>
